@@ -1,7 +1,7 @@
 {
   "name": "js_study",
   "version": "1.0.0",
-  "description": "예제를 만들어 JS를 배워보자",
+  "description": "JS를 배워보자",
   "main": "index.js",
   "type": "module",
   "scripts": {

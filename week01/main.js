@@ -2,4 +2,4 @@
 
 import {question} from"readline-sync";
 
-const input = question('kim eun young');
+const input = question("Hello" + "eunyoung" + "Kim");
