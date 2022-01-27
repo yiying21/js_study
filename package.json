@@ -1,17 +1,23 @@
 {
   "name": "js_study",
   "version": "1.0.0",
-  "description": "",
+  "description": "예제를 만들어 JS를 배워보자",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Kim eunyoung <yiying21@naver.com>",
   "license": "ISC",
   "dependencies": {
-    "readline-sync": "1.4.10",
-    "xo": "0.47.0"
+    "readline-sync": "1.4.10"
+  },
+  "devDependencies": {
+    "xo": "^0.47.0"
+  },
+  "xo": {
+    "space": true,
+    "prettier": true
   }
 }
