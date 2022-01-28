@@ -1,0 +1,26 @@
+[vscode]
+전체 검색 : 컨트롤 + 시프트 + P
+브라우저에서 콘솔열기 : 컨트롤 + 시프트 + i
+
+window PowerShell 관리자 모드로 실행
+파일 경로 바꿈
+cd 파일경로 주소
+
+
+[nodejs]
+결과값 보기
+node week01/main.js
+
+부분 저장
+git add .gitignore
+git commit -m "입력"
+
+현재 저장 상태
+git status
+
+전체 저장
+git add .
+git commit -m "입력"
+
+저장 로그
+git log
