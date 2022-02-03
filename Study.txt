@@ -24,3 +24,9 @@ git commit -m "입력"
 
 저장 로그
 git log
+
+올라와 있는 정보를 가져온 후 업로드
+git pull
+
+git hub 업로드
+git push

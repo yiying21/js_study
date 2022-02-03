@@ -9,4 +9,4 @@ import { question } from 'readline-sync';
 
 const name = question('이름이 무엇입니까?');
 
-console.log('hello ', name);
+console.log(`Hello ${name}`);

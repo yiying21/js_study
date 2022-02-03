@@ -9,6 +9,5 @@ import { question } from 'readline-sync';
 
 const num1 = question('처음에 가지고 있던 피자 조각 수:');
 const num2 = question('먹은 피자 조각 수:');
-const slicesleft = num1 - num2;
 
-console.log('남은 피자 조각 수는', slicesleft);
+console.log(`남은 피자 수는 ${num1 - num2} 조각`);

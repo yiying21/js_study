@@ -12,4 +12,4 @@ const name = question('이름이 무엇입니까?');
 const age = question('나이는 몇 살입니까?');
 const newage = Number(age) + 1;
 
-console.log(name, 'next birthday you will be', newage);
+console.log(`${name} next birthday you will be ${newage}`);

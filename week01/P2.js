@@ -10,4 +10,4 @@ import { question } from 'readline-sync';
 const lastname = question('이름이 무엇입니까?');
 const firstname = question('성이 무엇입니까?');
 
-console.log('hello ', lastname, firstname);
+console.log(`Hello ${firstname} ${lastname}`);
