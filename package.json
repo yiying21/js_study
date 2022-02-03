@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Kim eunyoung <yiying21@naver.com>",
+  "author": "Kim eunyoung <yiying2130@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "readline-sync": "1.4.10"
