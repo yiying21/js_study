@@ -66,10 +66,10 @@ console.log(10 >= 6); // 10은 6보다 크거나 같다
 const value1 = true;
 const value2 = 4 < 2;
 
-// || (or) : 처음으로 true가 나오면 멈춘다, or중에 하나라도 true면 true이다
+// || (or) : 처음에 true가 나오면 멈춘다, or중에 하나라도 true면 true이다
 console.log(`or: ${value1 || value2 || check()}`); // value1이 true 인지 확인 -> value2가 true 인지 확인 ->  check 함수에서 true가 아니면 '▣'를 출력
 
-// && (and) : 모두가 true가 되어야 true 로 리턴함
+// && (and) : 모두 true가 되어야 true 로 리턴함
 console.log(`and: ${value1 && value2 && check()}`);
 
 function check() {
@@ -83,4 +83,70 @@ function check() {
 // ! (not) : 값을 반대로 바꿔줌
 console.log(!value1);
 
-// 7. Equality (평등)
+// 7. Equality (동등 연산자)
+const stringFive = '5';
+const numberFive = 5;
+
+// == : type을 변경해서 검사
+console.log(stringFive == numberFive); // == 동등 비교 연산자 : '5'와 5는 같은가? true
+console.log(stringFive != numberFive); // != 부등 비교 연사자 : '5'와 5는 다른가? false
+
+// === : type을 확인해서 검사
+console.log(stringFive === numberFive); // === 엄격한 동등 비교 연산자 : '5'와 5는 타입이 같은가? false
+console.log(stringFive !== numberFive); // !== 엄격한 부등 비교 연산자 : '5'와 5는 타입이 다른가? true
+
+// object equality by reference
+const young1 = { name: 'young' };
+const young2 = { name: 'young' };
+const young3 = young1;
+
+console.log(young1 == young2); // young1 과 young2는 같은가? 각각 다른 레퍼런스에 저장되어 있으므로 false
+console.log(young1 === young2); // young1 과 young1는 타입이 같은가? false
+console.log(young1 === young3); // young1 과 young3은 타입이 가은가? young1을 young3에 할당했기 때문에 동일한 래퍼런스를 가지고 있기 때문에 true
+
+// equality 예시
+console.log(0 == false); // 0은 거짓과 같은가? true
+console.log(0 === false); // 0은 거짓과 타입이 같은가? 0은 boolean 타입이 아니기 때문에 false
+console.log('' == false); // '문자열'은 거짓과 같은가? true
+console.log('' === false); // '문자열'은 거짓과 타입이 같은가? 문자열은 boolean 타입이 아니기 때문에 false
+console.log(null == undefined); // null은 undefinded 와 같은가? true
+console.log(null === undefined); // null은 undefinded 과 타입이 같은가? 다른 타입이므로 false
+
+// 8. if : if, else if, else
+const name = 'young'; // 이름은 young 인데
+if (name === 'young') {
+  // 만약 young과 타입이 같으면, 다음 블럭을 실행해.
+  console.log('welcome. young!'); // welcome. young! 을 출력하고,
+} else if (name === 'eun') {
+  // 그렇지 않으면 eun 과 타입이 같으면, 다음 블럭을 실행해.
+  console.log('you are amazing eun!'); // you are amazing eun! 을 출력해라
+} else {
+  console.log('unkwnon'); // 또 다르면 unkwnon 을 출력해라
+}
+
+// 9. Ternary operator : ?
+console.log(name === 'young' ? 'yes' : 'no'); // young가 true 입니까? 맞으면 yes를 출력하고, 아니면 : 기호 다음인 no를 출력해라
+
+// 10. Switch statement : 정해진 타입을 검사하거나, 인원 등을 검사할 때 사용
+const browser = 'IE';
+
+switch (browser) {
+  case 'IE':
+    console.log('go away!'); // 브라우저가 IE이면 go away! 을 출력하고,
+    break; // 멈춘다
+  case 'Chrome': // 브라우저가 Chrome 이면
+  case 'Firefox': // 브라우저가 Firefox 이면
+    console.log('love you!'); // love you! 을 출력하고,
+    break; // 멈춘다
+  default:
+    // 브라우저가 여기에 없다면 기본 값으로
+    console.log('same all!'); // same all!을 출력해라
+    break;
+}
+
+// 11. Loops : While (~하는 동안)
+let i = 3;
+while (i > 0) {
+  console.log(`while: ${i}`);
+  i--;
+}
