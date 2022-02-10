@@ -5,8 +5,6 @@ import { question } from 'readline-sync';
 // qusestion은 입력받고 consol.log는 출력한다
 // window powershell에서 한글 깨질 때 [System.Console]::OutputEncoding = [System.Text.Encoding]::UTF8 선언 후 시작
 
-// 문제19) 사용자에게 1이나 2 또는 3을 입력하라고 하자.
-// 만약 1을 입력하면 "Thank you"라는 메시지를 표시하라.
-// 만약 2를 입력하면 "well done"을 표시하라.
-// 만약 3을 입력하면 "Correct"를 표시하라
-// 만약 사용자가 다른 것을 입력하면 "Error message"를 표시하라.
+// 문제21) 사용자에게 이름을 묻고 그 다음으로 성을 묻는다.
+// 이름과 성 사이에 공백 하나를 두어 출력하고
+// 공백을 포함한 전체 이름의 길이를 출력하라.
