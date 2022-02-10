@@ -66,10 +66,10 @@ console.log(10 >= 6); // 10은 6보다 크거나 같다
 const value1 = true;
 const value2 = 4 < 2;
 
-// || (or) : 처음에 true가 나오면 멈춘다, or중에 하나라도 true면 true이다
+// || (or) : 처음으로 true가 나오면 멈춘다, or중에 하나라도 true면 true이다
 console.log(`or: ${value1 || value2 || check()}`); // value1이 true 인지 확인 -> value2가 true 인지 확인 ->  check 함수에서 true가 아니면 '▣'를 출력
 
-// && (and) : 모두 true가 되어야 true 로 리턴함
+// && (and) : 모두가 true가 되어야 true 로 리턴함
 console.log(`and: ${value1 && value2 && check()}`);
 
 function check() {
@@ -82,27 +82,6 @@ function check() {
 
 // ! (not) : 값을 반대로 바꿔줌
 console.log(!value1);
-
-// 7. Equality (동등 연산자)
-const stringFive = '5';
-const numberFive = 5;
-
-// == : type을 변경해서 검사
-console.log(stringFive == numberFive); // == 동등 비교 연산자 : '5'와 5는 같은가? true
-console.log(stringFive != numberFive); // != 부등 비교 연사자 : '5'와 5는 다른가? false
-
-// === : type을 확인해서 검사
-console.log(stringFive === numberFive); // === 엄격한 동등 비교 연산자 : '5'와 5는 타입이 같은가? false
-console.log(stringFive !== numberFive); // !== 엄격한 부등 비교 연산자 : '5'와 5는 타입이 다른가? true
-
-// object equality by reference
-const young1 = { name: 'young' };
-const young2 = { name: 'young' };
-const young3 = young1;
-
-console.log(young1 == young2); // young1 과 young2는 같은가? 각각 다른 레퍼런스에 저장되어 있으므로 false
-console.log(young1 === young2); // young1 과 young1는 타입이 같은가? false
-console.log(young1 === young3); // young1 과 young3은 타입이 가은가? young1을 young3에 할당했기 때문에 동일한 래퍼런스를 가지고 있기 때문에 true
 
 // equality 예시
 console.log(0 == false); // 0은 거짓과 같은가? true
