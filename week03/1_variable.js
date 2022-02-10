@@ -95,7 +95,7 @@ const gsymboll2 = Symbol.for('id');
 console.log(gsymboll1 === gsymboll2);
 /// 출력값 : true
 
-console.log(`value: ${symboll1.description}, type: ${typeof symboll1}`); // 심볼 변수 뒤에 .description을 사용해서 스트링으로 변환 후 출력해야 함
+console.log(`value: ${symboll1.description}, type: ${typeof symboll1}`); // 심볼 변수 사용시 변수 뒤에 .description을 사용해서 스트링으로 변환 후 출력해야 함
 /// 출력값 : value: id, type: symbol
 
 // ## object : 물건, 물체들을 대표할 수 있는 박스 형태
