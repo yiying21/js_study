@@ -70,14 +70,19 @@ const test = 3 < 1;
 
 console.log(`value: ${canRead}, type: ${typeof canRead}`);
 console.log(`value: ${test}, type: ${typeof test}`);
+// 출력값
+// value: true, type: boolean
+// value: false, type: boolean
 
 // ## null : 값이 텅텅 빈 상태
 let noting = null;
 console.log(`value: ${noting}, type: ${typeof noting}`);
+// 출력값 : value: null, type: object
 
 // ## undefiedn : 값이 할당되지 않은 상태
 let x;
 console.log(`value: ${x}, type: ${typeof x}`);
+// 출력값 : value: undefined, type: undefined
 
 // ## symboll : 고유한 식별자를 사용할 때 활용
 const symboll1 = Symbol('id'); // 동일한 스트링을 작성해도 다른 심볼로 인식됨
