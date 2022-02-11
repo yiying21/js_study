@@ -16,3 +16,5 @@ if (num1 >= 10 && num1 <= 20) {
 } else {
   console.log('Incorrect answer');
 }
+
+// && (and) : 모두가 true가 되어야 true 로 리턴함

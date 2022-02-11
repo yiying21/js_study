@@ -10,3 +10,9 @@ import { question } from 'readline-sync';
 // 두 번째 질문에 대해 "yes"라고 입력하면 "It is too windy for an umbrella" 라는 메시지를 표시하라.
 // 그렇지 않다면 "Take an umbrella"라는 메시지를 표시하라.
 // 만약 첫 번째 질문에 대해 "yes"라고 입력하지 않는다면 "Enjoy your day"라는 메시지를 표시하라.
+
+const rain = question('지금 비가 오나요?');
+console.log(rain.toLowerCase());
+
+rain.toLowerCase() == 'yes';
+console.log(rain === 'yes' ? '지금 비가 옵니까?' : 'Enjoy your day');

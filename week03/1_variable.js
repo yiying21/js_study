@@ -39,7 +39,7 @@ console.log(`value : ${size}, type: ${typeof size}`);
 /// >> value : 17, type: number
 /// >> value : 17.1, type: number
 
-/// number = infinity, -infinity, NaN
+/// number = infinity, -infinity, NaN : 현업에선 사용 잘 안함
 const infinity = 1 / 0;
 const negativeInfinity = -1 / 0;
 const nAn = 'not a number' / 2;
@@ -79,7 +79,7 @@ let noting = null;
 console.log(`value: ${noting}, type: ${typeof noting}`);
 // 출력값 : value: null, type: object
 
-// ## undefiedn : 값이 할당되지 않은 상태
+// ## undefinded : 값이 지정되지 않은 상태
 let x;
 console.log(`value: ${x}, type: ${typeof x}`);
 // 출력값 : value: undefined, type: undefined
@@ -99,14 +99,14 @@ console.log(`value: ${symboll1.description}, type: ${typeof symboll1}`); // 심�
 /// 출력값 : value: id, type: symbol
 
 // ## object : 물건, 물체들을 대표할 수 있는 박스 형태
-/// const eunyoung = { name: 'eunyoung', age: 20 }; //eunyoung 이라는 object를 만들어서 이름은 eunyoung 이고 나이는 20살이다, const로 정의했으므로 다른 오브젝트로 할당이 불가능함
-/// eunyoung.name = michelle; //.name 으로 사용시 값은 변경 가능
-/// eunyoung.age = 21; //.age 으로 사용시 값은 변경 가능
-/// console.log(`${eunyoung.name}, ${eunyoung.age}`); // ?? 값이 변경되었음을 어떻게 확인하는지.
+const eunyoung = { name: 'eunyoung', age: 20 }; //eunyoung 이라는 object를 만들어서 이름은 eunyoung 이고 나이는 20살이다, const로 정의했으므로 다른 오브젝트로 할당이 불가능함
+eunyoung.name = 'michelle'; //.name 으로 사용시 값은 변경 가능
+eunyoung.age = 21; //.age 으로 사용시 값은 변경 가능
+console.log(eunyoung); // ?? 값이 변경되었음을 어떻게 확인하는지.
 
 // 4. Dynamic typing : 프로그램이 동작할 때 할당된 값에 따라서 타입이 변경될 수 있음
 let text = 'hello';
-/// console.log(text.charAt(0)); // text.charAt(0) 의 변수 문의
+console.log(text.charAt(0)); // charAt : 문자를 배열화해서 숫자를 매김, 문자를 하나 뽑을 때 사용
 /// 출력값 : h
 /// 배열은 0,1,2,3..순으로 매겨짐
 /// 0은 첫번째 이므로 h로 출력됨

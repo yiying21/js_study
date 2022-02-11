@@ -16,3 +16,14 @@ if (color == 'red' || color == 'RED' || color == 'Red') {
 } else {
   console.log("I don't like that colour, I prefer red");
 }
+
+// || (or) : 처음으로 true가 나오면 멈춘다, or중에 하나라도 true면 true이다
+
+if (color.toUpperCase() == 'RED') {
+  console.log('I like red too');
+} else {
+  console.log("I don't like that colour, I prefer red");
+}
+
+//.toUpperCase : 전체를 대문자로 바꿔주는 함수
+//.toLowcase  : 전체를 소문자로 바꿔주는 함수

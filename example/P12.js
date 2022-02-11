@@ -13,7 +13,7 @@ const num1 = Number(question('첫번째 숫자 입력:'));
 const num2 = Number(question('두번째 숫자 입력:'));
 
 if (num1 > num2) {
-  console.log(`${num2}`);
+  console.log(num2);
 } else {
-  console.log(`${num2}`);
+  console.log(`${num1}, ${num2}`);
 }
