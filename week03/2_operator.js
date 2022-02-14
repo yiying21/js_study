@@ -46,15 +46,15 @@ console.log(`postIncrement: ${postIncrement}, counter: ${counter}`);
 let x = 3;
 let y = 6;
 
-x += y; // x = x + y;
-x -= y; // x = x - y;
-x *= y; // x = x * y;
-x /= y; // x = x / y;
+x += y; // x = x + y; 9
+x -= y; // x = x - y; 9-6
+x *= y; // x = x * y; 3*6
+x /= y; // x = x / y; 18/6
 
 console.log(`${(x += y)}`); // 9
-console.log(`${(x -= y)}`); // 3?? 마이너스 표기가 안됨..
+console.log(`${(x -= y)}`); // 3
 console.log(`${(x *= y)}`); // 18
-console.log(`${(x /= y)}`); // 3?? 값이 잘못 나옴..
+console.log(`${(x /= y)}`); // 3
 
 // 5. Comparison operator (비교 연산자)
 console.log(10 < 6); // 10은 6보다 작다
