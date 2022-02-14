@@ -37,4 +37,4 @@ console.log(eun); // obj는 레퍼런스로 전달되기 때문에 함수 안에
 function showMessge(message, from = 'unknown') {
   console.log(`${message} by ${from}`);
 }
-showMessge('Hi');
+showMessge('Hi'); // 사용자가 파라미터를 전달하지 않을 때 대체값을 출력
