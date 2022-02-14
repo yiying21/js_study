@@ -10,3 +10,5 @@ import { question } from 'readline-sync';
 const str1 = question('아무 단어나 입력하세요 ');
 
 console.log(str1.toUpperCase());
+
+// .toUpperCase() : 문자를 대문자로 변환

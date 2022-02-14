@@ -15,6 +15,7 @@ if (lastName.length < 5) {
   const firstName = question('성을 입력하세요: ');
   console.log((lastName + firstName).toUpperCase());
 } else {
-  const lastName = lastName.length > 5;
   console.log(lastName.toLowerCase());
 }
+
+// .length : 길이 측정(공백 포함)

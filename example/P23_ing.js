@@ -11,6 +11,6 @@ import { question } from 'readline-sync';
 // 자바스크립트에서 인덱스는 1이 아닌 0부터 시작한다는 것을 기억하자.
 
 const sing = question('자장가의 첫 줄을 입력: ');
-const length1 = sing.length;
+console.log(sing.length);
 
-console.log(length1);
+console.log(sing.charAt(0));

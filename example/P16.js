@@ -14,5 +14,13 @@ import { question } from 'readline-sync';
 const rain = question('지금 비가 오나요?');
 console.log(rain.toLowerCase());
 
-rain.toLowerCase() == 'yes';
-console.log(rain === 'yes' ? '지금 비가 옵니까?' : 'Enjoy your day');
+if (rain.toLowerCase() == 'yes') {
+  const windy = question('바람이 부나요? ');
+  if (windy.toLowerCase() == 'yes') {
+    console.log('It is too windy for an umbrella');
+  } else {
+    console.log('Take an umbrella');
+  }
+} else {
+  console.log('Enjoy your day');
+}

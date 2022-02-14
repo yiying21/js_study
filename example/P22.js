@@ -16,4 +16,6 @@ const firstName1 = firstName.charAt(0).toUpperCase() + firstName.slice(1);
 
 console.log(lastName1 + ' ' + firstName1);
 
-// lastName.slice(1) : 1번째까지 문자를 제거하고 출력
+// .charAt(0) : 문자를 배열화한 후 0번째 문자를 출력
+// .toUpperCase() : 문자를 대문자로 변환
+// .slice(1) : 1번째까지 문자를 제거하고 출력
