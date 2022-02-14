@@ -1,4 +1,5 @@
 [vscode]
+window powershell에서 한글 깨질 때 [System.Console]::OutputEncoding = [System.Text.Encoding]::UTF8 선언 후 시작
 전체 검색 : 컨트롤 + 시프트 + P
 브라우저에서 콘솔열기 : 컨트롤 + 시프트 + i
 
@@ -34,3 +35,4 @@ git push
 알트 누르고 마우스로 범위지정하면 선택하여 한번에 바꾸기 및 제거
 컨트롤 + 알트 누른 상태에서 화살표로 선택하여 한번에 바꾸기 및 제거
 컨트롤 + F 에서 찾기, 바꾸기를 통해 원하는 코드 한번에 바꾸기
+
