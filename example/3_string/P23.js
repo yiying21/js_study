@@ -8,6 +8,9 @@ import { question } from 'readline-sync';
 // 자바스크립트에서 인덱스는 1이 아닌 0부터 시작한다는 것을 기억하자.
 
 const sing = question('자장가의 첫 줄을 입력: ');
-console.log(sing.length);
+console.log(`길이: ${sing.length}`);
 
-console.log(sing.charAt(0));
+const start = Number(question('시작할 인덱스 번호: '));
+const end = Number(question('끝 인덱스 번호: '));
+
+console.log(`${sing.slice(start, end)}`);
