@@ -85,32 +85,57 @@ console.log(Article.publisher); // static 함수가 있다면 class 이름을 �
 Article.printPublisher(); // 출력값 : Dream Coding
 
 // 5. Inheritance (상속과 다양성)
-// 예를 들어 각각 다른 모양(삼각형, 직사각형, 정사각형 등)이 있다면 아우를 수 있는 '도형'으로 정의하고, 공통 속성값을 재사용하면 간편하다
+// 예를 들어 각각 다른 모양(삼각형, 직사각형, 정사각형 등)이 있다면 모두를 아우를 수 있는 '모양'으로 정의하고, 공통 속성값을 재사용하면 간편하다
 
 class shape {
   constructor(width, height, color) {
-    // shape 이라는 클래스에 width, height, color 라는 필드가 있고
+    // shape(모양) 이라는 클래스에 width, height, color 라는 필드가 있고
     this.width = width;
     this.height = height;
     this.color = color;
   }
   draw() {
-    // draw 라는 메소드
+    // draw 라는 메소드 1개
     console.log(`drawing ${this.color} color!`);
   }
   getArea() {
-    // getArea 라는 메소드
-    return width * this.height;
+    // getArea 라는 메소드 1개가 있음
+    return this.width * this.height;
   }
 }
 
 // Rectangle : 직사각형, extend: 연장하다
+// 위 코드에서 이어서 Rectangle 이라는 클래스를 만들고 싶다면, 'extends' 라는 클래스를 사용하면 위 shape에서 정의한 내용이 Rectangle에 포함되어 연장됨
 class Rectangle extends shape {}
-class Triangle extends shape {}
-// 이어서 Rectangle 이라는 클래스를 만들고 싶다면 'extends' 라는 클래스를 사용하면 위 shape에서 정의한 내용이 Rectangle에 포함됨
+class Triangle extends shape {
+  draw() {
+    // draw 함수를 오버라이딩해서 사용할 수 있음
+    super.draw(); // super. 함수를 사용하면 부모의 draw 함수(메소드)를 호출할 수 있음
+    console.log('▲');
+  }
+  getArea() {
+    return (this.width * this.height) / 2; // 필요한 함수만 오버라이딩 해서 작성할 수 있음 (삼각형에서는 (너비x높이)/2 공식을 추가)
+  }
+
+  toString() {
+    return `Triangle: color: ${this.color}`;
+  }
+}
 
 const rectangle = new Rectangle(20, 20, 'blue');
 rectangle.draw();
+// 출력값 : drawing blue color!
+console.log(rectangle.getArea());
 
 const triangle = new Triangle(20, 20, 'red');
 triangle.draw();
+console.log(triangle.getArea());
+// 출력값 : drawing red color!
+
+// 6. InstanceOF : 왼쪽에 있는 오브젝트가 오른쪽에 있는 클래스에 의해 만들어진건지 아닌지 확인 (true 와 false를 리턴함)
+console.log(rectangle instanceof Rectangle); // true
+console.log(triangle instanceof Rectangle); // fales
+console.log(triangle instanceof Triangle); // true
+console.log(triangle instanceof shape); // shape을 상속했기 때문에 true
+console.log(triangle instanceof Object); // 모든 오브젝트 클래스는 자바스크립트에 오브젝트를 상속했기 때문에 true
+console.log(triangle.toString()); // 출력값 : Triangle: color: red
