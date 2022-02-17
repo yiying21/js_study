@@ -10,6 +10,7 @@ import { question } from 'readline-sync';
 
 const age = Number(question('나이가 몇 살입니까?'));
 
+// if문
 if (age >= 18) {
   console.log('You can vote');
 } else if (age == 17) {
@@ -18,4 +19,20 @@ if (age >= 18) {
   console.log('you can buy a lottery ticke');
 } else {
   console.log('You can go Trick-or-Treating');
+}
+
+// // switch문 사용시 소괄호 안에 참, 거짓을 넣어줘야 함
+switch (true) {
+  case age >= 18:
+    console.log('You can vote');
+    break;
+  case (age = 17):
+    console.log('You can learn to drive');
+    break;
+  case (age = 16):
+    console.log('you can buy a lottery ticke');
+    break;
+  default:
+    console.log('You can go Trick-or-Treating');
+    break;
 }

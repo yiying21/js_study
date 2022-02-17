@@ -8,7 +8,6 @@ import { question } from 'readline-sync';
 
 const lastName = question('이름 입력: ');
 const firstName = question('성 입력: ');
+const fullName = lastName + ' ' + firstName;
 
-console.log(
-  `${lastName + ' ' + firstName} 길이: ${(lastName + ' ' + firstName).length}`
-);
+console.log(`${fullName}, 길이: ${fullName.length}`);

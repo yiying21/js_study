@@ -7,19 +7,26 @@ import { question } from 'readline-sync';
 // 예를 들어, 'pig'라는 단어는 'igpay', 'banana'는 'ananabay', 그리고 'aadvark'는 'aadvarkway'가 된다.
 // 사용자에게 단어를 입력받아서 피그 라틴으로 변환하고 소문자로 출력하는 프로그램을 만들어라.
 
-const name1 = question('Pig Latin 입력: ');
+const name1 = question('아무 단어 입력: ');
 
-if (name1.charAt(0).toUpperCase() != 'A' && 'E' && 'I' && 'O' && 'U') {
+if 
+(name1.charAt(0).toUpperCase() != 'A')&&
+(name1.charAt(0).toUpperCase() != 'E')&&
+(name1.charAt(0).toUpperCase() != 'I')&&
+(name1.charAt(0).toUpperCase() != 'O')&&
+(name1.charAt(0).toUpperCase() != 'U') {
   const newName1 = name1.slice(1);
-  console.log(`${newName1.replaceAll('ig', 'igPay')}`);
+  const firstLetter = name1.charAt(0);
+  console.log(`${newName1}${firstLetter}ay`);
 } else {
   console.log(`${name1}way`);
 }
 
-const name2 = question('아무 단어 입력: ');
-if (name2 != 'Pig Latin') {
-  console.log('Pig Latin'.toLowerCase());
+
+function(name){
+  name.
 }
+
 
 // 모움 : a, e, i, o, u, ee, oo, aa
 // 자음 : g, n, d, l, m, b, s, ng, j, g, ch, c, k, q, t, p, h, f, r, v, x, z, sh, ph, th

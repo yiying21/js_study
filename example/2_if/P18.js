@@ -8,7 +8,9 @@ import { question } from 'readline-sync';
 
 const num1 = Number(question('숫자 입력: '));
 
-if (num1 >= 10 && num1 <= 20) {
+if (num1 < 10) {
+  console.log('Too low');
+} else if (num1 >= 10 && num1 <= 20) {
   console.log('Correct');
 } else {
   console.log('Too high');

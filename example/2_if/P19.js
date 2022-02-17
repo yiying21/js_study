@@ -10,6 +10,7 @@ import { question } from 'readline-sync';
 
 const num = Number(question('1, 2, 3 중에 입력:'));
 
+// if문
 if (num == 1) {
   console.log('Thank you');
 } else if (num == 2) {
@@ -18,4 +19,20 @@ if (num == 1) {
   console.log('Correct');
 } else {
   console.log('Error message');
+}
+
+// switch문 사용시 숫자인 경우 숫자만 입력하여 비교
+switch (num) {
+  case 1:
+    console.log('Thank you');
+    break;
+
+  case 2:
+    console.log('well done');
+    break;
+  case 3:
+    console.log('Correct');
+    break;
+  default:
+    console.log('Error message');
 }
