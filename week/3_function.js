@@ -143,13 +143,13 @@ const simplePrint = function () {
   console.log('simplePrint');
 };
 
-const simplePrint = () => console.log('simplePrint'); // 위의 코드를 => 기호를 이용하여 간단하게 만들 수 있음
+const simplePrint1 = () => console.log('simplePrint'); // 위의 코드를 => 기호를 이용하여 간단하게 만들 수 있음
 
 const add = function (a, b) {
   return a + b;
 };
 
-const add = (a, b) => a + b; // 위의 코드를 => 기호를 이용하여 간단하게 만들 수 있음
+const add1 = (a, b) => a + b; // 위의 코드를 => 기호를 이용하여 간단하게 만들 수 있음
 
 const simpleMultiplay = (a, b) => {
   // 블럭을 사용할 경우 return 값을 항상 입력해야 함
