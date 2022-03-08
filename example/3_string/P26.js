@@ -9,24 +9,24 @@ import { question } from 'readline-sync';
 
 const name1 = question('아무 단어 입력: ');
 
-if 
-(name1.charAt(0).toUpperCase() != 'A')&&
-(name1.charAt(0).toUpperCase() != 'E')&&
-(name1.charAt(0).toUpperCase() != 'I')&&
-(name1.charAt(0).toUpperCase() != 'O')&&
-(name1.charAt(0).toUpperCase() != 'U') {
+if (isJaum(name1)) {
   const newName1 = name1.slice(1);
   const firstLetter = name1.charAt(0);
-  console.log(`${newName1}${firstLetter}ay`);
+  const result = newName1 + firstLetter + 'ay'; // function을 사용하여 아래 result에 포함된 결과값을 리턴한다
+  console.log(result.toLowerCase());
 } else {
   console.log(`${name1}way`);
 }
 
-
-function(name){
-  name.
+function isJaum(name) {
+  const result =
+    name.charAt(0).toUpperCase() != 'A' &&
+    name.charAt(0).toUpperCase() != 'E' &&
+    name.charAt(0).toUpperCase() != 'E' &&
+    name.charAt(0).toUpperCase() != 'O' &&
+    name.charAt(0).toUpperCase() != 'U';
+  return result;
 }
-
 
 // 모움 : a, e, i, o, u, ee, oo, aa
 // 자음 : g, n, d, l, m, b, s, ng, j, g, ch, c, k, q, t, p, h, f, r, v, x, z, sh, ph, th
