@@ -11,7 +11,8 @@
   "author": "Kim eunyoung <yiying2130@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "readline-sync": "^1.4.10"
+    "readline-sync": "^1.4.10",
+    "real-turtle": "^1.0.21"
   },
   "devDependencies": {
     "xo": "^0.47.0"

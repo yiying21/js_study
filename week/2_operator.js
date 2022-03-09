@@ -123,7 +123,7 @@ switch (browser) {
     break;
 }
 
-// 11. Loops(반복문) : While
+// 11. Loops(반복문) : While (~하는 동안)
 // While : 조건문이 맞을 때만 블럭을 실행한다
 let i = 3;
 
