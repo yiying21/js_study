@@ -12,3 +12,5 @@ while (num <= 5) {
   num = questionInt(`숫자 입력: `);
 }
 console.log(`The last number you entered was a [${num}]`);
+
+// while 문안에 const나 let을 사용하는 것과 안하는 것의 차이가 뭔지..?

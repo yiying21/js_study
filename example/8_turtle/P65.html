@@ -1,0 +1,49 @@
+// 문제65) 숫자 1의 밑에서부터 그리기 시작하여 다음의 그림처럼 숫자를 그려라.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex. 65</title>
+  </head>
+  <body>
+    <!-- 그림이 그려질 영역 -->
+    <canvas id="real-turtle"></canvas>
+    <script src="https://unpkg.com/real-turtle"></script>
+    <script src="https://unpkg.com/real-turtle/build/helpers/simple.js"></script>
+    <script>
+      // 여기서 시작
+        turtle
+        .forward(200)
+        .right(90)
+        .penUp()
+        .forward(120)
+        .penDown()
+        .forward(100)
+        .right(90)
+        .forward(100)
+        .right(90)
+        .forward(100)
+        .left(90)
+        .forward(100)
+        .left(90)
+        .forward(100)
+        .penUp()
+        .forward(120)
+        .penDown()
+        .forward(100)
+        .left(90)
+        .forward(200)
+        .left(90)
+        .forward(100)
+        .left(90)
+        .penUp()
+        .forward(100)
+        .penDown()
+        .left(90)
+        .forward(100)
+    </script>
+  </body>
+</html>
