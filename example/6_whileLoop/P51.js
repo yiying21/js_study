@@ -16,17 +16,17 @@ while (num > 0) {
     `There are [${num}] green bottles hanging on the wall, [${num}] green bottles hanging on the wall, and if 1 green bottle should accidentally fall`
   );
   num = num - 1;
+  if (num == 0) {
+    console.log(`There are no more green bottles hanging on the wall`);
+    break;
+  }
   let anwer = questionInt(
     `how many green bottles will be hanging on the wall? `
   );
   if (anwer === num) {
     console.log(`There will be [${num}] green bottles hanging on the wall`);
+    break;
   } else {
-    while (anwer !== num) {
-      anwer = `No, try again`;
-    }
+    console.log(`No, try again`);
   }
 }
-console.log(`There are no more green bottles hanging on the wall`);
-
-// 모르겠...

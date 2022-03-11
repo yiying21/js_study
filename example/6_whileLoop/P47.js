@@ -11,7 +11,7 @@ let total = questionInt(`숫자 입력: `);
 let again = `y`;
 
 while (again === `y`) {
-  let num1 = questionInt(`다른 숫자 입력: `);
+  const num1 = questionInt(`다른 숫자 입력: `);
   total = total + num1;
   again = question(`다른 숫자를 더하고 싶나요?(y/n) `);
 }

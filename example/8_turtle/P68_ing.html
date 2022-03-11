@@ -15,9 +15,12 @@
     <script src="https://unpkg.com/real-turtle/build/helpers/simple.js"></script>
     <script>
       // 여기서 시작
-        turtle
-        .forward(200)
-        .right(90)
+      const lines = Math.floor(Math.random()*10);
+      for(let i =0; i < lines; i++){
+        const lenght = Math.floor(Math.random()*25) +1;
+        const rotate = Math.floor(Math.random()*365) +1;
+        turtle.forward(lenght).right(rotate)
+      }  
     
     </script>
   </body>

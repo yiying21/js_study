@@ -15,9 +15,32 @@
     <script src="https://unpkg.com/real-turtle/build/helpers/simple.js"></script>
     <script>
       // 여기서 시작
-        turtle
-        .forward(200)
-        .right(90)
+      const color = ["Yellow", "Blue", "Red", "Black", "Green", "Pink"]
+        for(let i = 0; i<8;i++){
+            let c = Math.floor(Math.random()*6)
+            switch (color[c]){
+                case 'Yellow':
+                turtle.setStrokeColorRGB(225, 225, 0).forward(50).right(45);
+                break;
+                case 'Blue':
+                turtle.setStrokeColorRGB(0, 0, 225).forward(50).right(45);
+                break;
+                case 'Red':
+                turtle.setStrokeColorRGB(225, 0, 0).forward(50).right(45)
+                break;
+                case 'Black':
+                turtle.setStrokeColorRGB(0, 0, 0).forward(50).right(45)
+                break;
+                case 'Green':
+                turtle.setStrokeColorRGB(0, 225, 0).forward(50).right(45)
+                break;
+                case 'Pink':
+                turtle.setStrokeColorRGB(225, 0, 225).forward(50).right(45)
+                break;
+                
+            }
+            
+        }
     
     </script>
   </body>
