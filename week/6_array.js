@@ -87,5 +87,12 @@ console.log(fruits.indexOf(`🥝`));
 console.log(fruits.indexOf(`🍉`));
 console.log(fruits.indexOf(`🍔`)); // 배열에 해당 아이템이 없을 때 .indexOf() 사용시 -1를 출력함
 
-// 배열에 해당 아이템이 있는지 없는지 검색할 때  : .includes() >> true 또는 false로 리턴
-console.log(fruits.includes(`🍉`));
+// 배열에 해당 아이템이 있는지 없는지 알고 싶을 때  : .includes() >> true 또는 false로 리턴
+console.log(fruits.includes(`🍉`)); // 수박은 있으므로 true
+console.log(fruits.includes(`🍔`)); // 햄버거는 없으므로 false
+
+// 제일 마지막에 인덱스 번호를 알고 싶을 때 : .lastIndexOf()
+fruits.push(`🥝`);
+console.log(fruits);
+console.log(fruits.indexOf(`🥝`)); // 제일 첫번째에 해당하는 값을 만나면 리턴함
+console.log(fruits.lastIndexOf(`🥝`)); // 제일 마지막에 해당하는 값을 만나면 리턴함
