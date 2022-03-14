@@ -7,9 +7,10 @@ import { question } from 'readline-sync';
 // 예: "I bet you are GREEN with envy" 또는 "You are probably feeling BLUE right now". 다시 맞혀 보라고 사용자에게 색상을 입력하라고 한다.
 // 사용자가 맞힐 때까지 이 작업을 반복한다.
 
-const colors = ['red', 'orange', 'yellow', 'green', 'blue'];
+const colors = ['red', 'orange', 'yellow', 'green', 'blue']; // 색깔을 배열한다
 
 while (true) {
+  //
   const result = colors[Math.floor(Math.random() * 4)];
   console.log(`랜덤 색상 : ${result}`);
   const user = question('red, orange, yellow, green, blue 중 1개 입력: ');
