@@ -4,13 +4,18 @@
 .right(90) : 오른쪽 방향으로 (각도) 회전
 
 [turtle에 색상 변경]
-.color("blue")
+.setStrokeColorRGB(223,33,46) // 괄호 안에 R,G,B 색상 코드 넣기
 
 [turtle에 백그라운드 색상 변경]
-.bgcolor("blue")
+
 
 [다각형 회전 각도]
 삼각형 : 360 / 면의 개수(3)
 사각형 : 360 / 면의 개수(4)
 오각형 : 360 / 면의 개수(5)
-꼭지점 개수
+
+
+[도형에 색채우기]
+turtle.setFillStyle("#FFA500"); // 시작시 입력
+turtle.arc(100, 360, false);// (반지름, 각도) // 도형 그리기
+turtle.fill() // 채우기 맺음
