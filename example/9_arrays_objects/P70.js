@@ -13,3 +13,7 @@ console.log(country.indexOf(user1));
 
 const user2 = questionInt('0~4 숫자 입력: ');
 console.log(country[user2]);
+console.log(country.at(user2));
+
+// 배열안에 어떤 아이템이 몇 번째 인덱스에 있는지 알고 싶을 때 : .indexOf(검색할 아이템명)
+// 정수 값을 받아, 배열에서 해당 값에 해당하는 인덱스의 요소를 반환 : at()

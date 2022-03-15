@@ -10,3 +10,5 @@ const country = ['korea', 'USA', 'japan', 'china', 'UK'];
 console.log(country);
 const user = question('표시된 국가중 하나를 입력: ');
 console.log(country.indexOf(user));
+
+// 배열안에 어떤 아이템이 몇 번째 인덱스에 있는지 알고 싶을 때 : .indexOf(검색할 아이템명)
