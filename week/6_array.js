@@ -168,7 +168,7 @@ console.log('array1:', array1); // 출력값: "array1:" Array ["three", "two", "
 // splice(삭제를 시작할 인덱스 번호, 삭제할 개수), splice는 배열 자체를 수정하여 리턴하는 함수
 // slice(삭제할 시작 인덱스 번호, 마지막 인덱스 번호) 단, 마지막 인덱스 번호는 제외되므로 +1 해줘야 함, slice는 배열에서 원하는 부분만 리턴하는 함수
 const array2 = [1, 2, 3, 4, 5];
-const result3 = array2.slice(2, 5); // 인덱스 번호 2부터 5까지 배열하겠다.
+const result3 = array2.slice(2, 5); // 인덱스 번호 2부터 5까지 배열하겠다.(여기서 번호 5까지 노출시키려면 인덱스 번호 4에서 +1 해서 5로 입력해야 함)
 console.log(result3); // 1, 2가 삭제된 3,4,5로 출력
 
 class Student {

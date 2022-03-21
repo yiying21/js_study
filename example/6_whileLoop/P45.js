@@ -13,5 +13,3 @@ while (total <= 50) {
   total = total + num;
   console.log(`The total is... [${total}]`);
 }
-
-// while 문안에 const나 let을 사용하는 것과 안하는 것의 차이가 뭔지..?

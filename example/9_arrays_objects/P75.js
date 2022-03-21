@@ -19,4 +19,5 @@ if (num1.includes(user)) {
   console.log('That is not in the list');
 }
 
+// forEach는 배열 안에 들어있는 value 들마다 내가 전달한 함수를 출력한다
 // includes() 메서드는 배열이 특정 요소를 포함하고 있는지 판별
