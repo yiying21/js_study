@@ -1,6 +1,7 @@
 'use strict';
 
 // 1. variable : 변수로 할당된 후 변경될 수 있는 값
+// 변수? 데이터를 담고 있는 아이
 // let : Mutable 타입 (read & wirte)
 // {} block scope  : 블럭 안에 코드를 넣으면 블럭 밖에서는 볼 수 없음
 // global scope : 글로벌 스콥은 어느 곳에서나 볼 수 있음, 글로벌한 변수는 항상 메모리에 탑재되므로 최소한으로 사용
