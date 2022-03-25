@@ -17,3 +17,5 @@ const arry = word.split('').reverse(); // 문자열을 배열로 변환하는 .s
 arry.forEach((re) => console.log(re)); // arry의 배열 안에 들어있는 value 들마다 내가 전달한 함수를 출력
 
 // 배열을 거꾸로 만들기 : .reverse();
+// 주어진 string을 배열로 변환하기 : .split()
+// .split() : 괄호()안에 구분자,limit를 전달함 (limit는 옵션)

@@ -13,10 +13,9 @@ const pass2 = question('비밀번호 한 번더 입력: ');
 
 if (pass1 === pass2) {
   console.log('Thank you');
+  // 첫번째 코드를 통과하지 않았을 때 다음 코드↓를 실행한다.
 } else if (pass1.toUpperCase() === pass2.toUpperCase()) {
   console.log('They must be in the same case');
 } else {
   console.log('Incorrect');
 }
-
-// 풀이가 이해가 잘 안감..

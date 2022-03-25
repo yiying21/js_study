@@ -64,8 +64,8 @@ console.log(`value: ${HelloBob}, type:${typeof HelloBob}`);
 /// 출력값 : value: hi btrenden!, type:string
 
 // ## boolean : 참과 거짓
-/// false : 0, null, undefinded, NaN, ''
-/// true : 어떤 정의된 값
+/// false : 0, -0, null, undefinded, NaN, ''(빈값)
+/// true : 어떤 정의된 값, []텅텅빈 배열
 const canRead = true;
 const test = 3 < 1;
 

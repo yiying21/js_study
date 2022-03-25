@@ -139,3 +139,17 @@ console.log(triangle instanceof Triangle); // true
 console.log(triangle instanceof shape); // shape을 상속했기 때문에 true
 console.log(triangle instanceof Object); // 모든 오브젝트 클래스는 자바스크립트에 오브젝트를 상속했기 때문에 true
 console.log(triangle.toString()); // 출력값 : Triangle: color: red
+
+// 예제
+
+class Counter {
+  constructor() {
+    this.counter = 0;
+  }
+  increase() {
+    this.counter++;
+    console.log(this.counter);
+  }
+}
+const coolCounter = new Counter();
+coolCounter.increase();

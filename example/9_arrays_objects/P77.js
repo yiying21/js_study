@@ -6,30 +6,31 @@ import { question } from 'readline-sync';
 // 입력된 이름의 위치(인덱스)를 출력하고 그 사람을 정말로 파티에 초대할 것인지를 묻는다.
 // 만약 "n"이라고 답하면 그 항목을 배열서 삭제하고 배열을 다시 출력한다.
 
-const name1 = question('파티에 초대할 1번째 이름 입력: ');
-const name2 = question('파티에 초대할 2번째 이름 입력: ');
-const name3 = question('파티에 초대할 3번째 이름 입력: ');
-let party = [name1, name2, name3];
-let count = 0;
+// 76번 문제 코드
+let party = [];
+for (let i = 0; i < 3; i++) {
+  party.push(question('파티에 초대할 이름 입력: '));
+}
 
 while (true) {
   const addName = question('추가할 사람이 있나요?(y/n) ');
   if (addName === 'y') {
     const newName = question('파티에 초대할 사람 추가 입력: ');
-    count = party.length + 1;
     party.push(newName);
   } else if (addName === 'n') {
-    console.log(`파티에 초대한 사람은 총 ${count}명`);
+    console.log(`파티에 초대한 사람은 총 ${party.length}명`);
     break;
   }
-  console.log(party);
 }
+console.log(party);
 
+// 여기서부터 77번 문제 코드
 const user1 = question('배열에 이름중 하나 입력: ');
 const index = party.indexOf(user1);
 const user2 = question(
   `이름: ${user1}, 인덱스 번호: ${index} 를 정말 파티에 초대할거야? (y/n) `
 );
+
 if (user2 === 'y') {
   console.log(`${user1}를 포함하여 [${party}] 이다`);
 } else if (user2 === 'n') {
