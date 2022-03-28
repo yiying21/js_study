@@ -17,5 +17,3 @@ if (num < 10) {
     console.log(`Too high`);
   }
 }
-
-// else if 까지만 사용해도 되는지..?

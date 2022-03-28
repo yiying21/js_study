@@ -31,6 +31,14 @@ for (let fruit of fruits) {
   console.log(fruit);
 }
 
+const array4 = ['a', 'b', 'c'];
+for (const element of array4) {
+  console.log(element);
+}
+// expected output: "a"
+// expected output: "b"
+// expected output: "c"
+
 // c) forEach 사용 (자주 사용!!!)
 // forEach는 배열 안에 들어있는 value 들마다 내가 전달한 함수를 출력한다
 

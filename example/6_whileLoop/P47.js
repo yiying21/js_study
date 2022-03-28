@@ -16,5 +16,3 @@ while (again === `y`) {
   again = question(`다른 숫자를 더하고 싶나요?(y/n) `);
 }
 console.log(`The total is ${total}`);
-
-// while 반복문을 사용할 때는 const가 아닌 let를 항상 사용해야 하는지..?
