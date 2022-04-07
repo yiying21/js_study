@@ -9,18 +9,26 @@
 <body>
     
     <input type="button" value="fetch" onclick="
-    /*
+    
+    // fetch('html')
+    // .then((response)=>{
+    //     return response.json();
+    // })
+    // .then((text)=>{
+    //     alert(text)
+    // })
+    
     fetch('html').then(function(response){
         response.text().then(function(text){
             alert(text);        
         })
     })
-    */
-   function callbackme(){
-       console.log('response end')
-   }
-   fetch('html').then(callbackme);
 
+//    function callbackme(){
+//        console.log('response end')
+//    }
+//    fetch('html').then(callbackme);
+   
 ">
 </body>
 </html>

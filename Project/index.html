@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href= "main.css">
+</head>
+<body>
+
+    <!-- <h2 id = "Hello">안녕하세요</h2>
+    <h2 id = "Hi">올때 매로나</h2> -->
+
+    <div class="alert-box" id = "alert">
+        <p>Alert 박스</p> 
+        <button onclick="alert('none')">닫기</button>
+    </div>
+    <button onclick="alert('block')">버튼</button>
+
+
+<script>
+
+// document.getElementById('Hello').innerHTML = '안녕';
+// document.getElementById('Hi').innerHTML = '올때 바밤바';
+// document.getElementById('Hello').style.color = 'red';
+// document.getElementById('Hello').style.fontSize = '30px';
+
+function alert(구멍){
+    document.getElementById('alert').style.display = '구멍';
+}
+
+
+function alertClose(){
+    document.getElementById('alert').style.display = 'none'; 
+}
+
+
+
+</script>
+
+</body>
+</html>

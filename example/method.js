@@ -3,7 +3,7 @@
 // Math.round() : 입력값을 반올림한 수와 가장 가까운 정수 값을 반환
 console.log(Math.round(0.9)); //출력값: 1
 
-// Math.floor : 주어진 숫자와 같거나 작은 정수 중에서 가장 큰 수를 반환
+// Math.floor() : 주어진 숫자와 같거나 작은 정수 중에서 가장 큰 수를 반환
 console.log(Math.floor(5.95)); //출력값: 5
 
 // Math.max() : 입력값으로 받은 0개 이상의 숫자 중 가장 큰 숫자를 반환
