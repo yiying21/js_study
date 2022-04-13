@@ -1,7 +1,7 @@
 'use strict';
 
 // javascript is synchronous. (자바스크립트는 동기식이다)
-// Execute the code block by orger after hoisting. (호스팅 후 작성한 코드가 동기적으로 실행된다)
+// Execute the code block by orger after hoisting. (호이스팅 후 작성한 코드가 동기적으로 실행된다)
 // hoisting? 변수, 함수 선언들이 제일 위로 올라가는 것
 
 // 동기적인 실행 방법

@@ -114,4 +114,4 @@ userStorage
   .loginUser(id, password) // userStoragedptj 로그인하고
   .then(userStorage.getRoles) // 로그인에 성공하면 userStorage의 getRoles를 호출한다
   .then((user) => alert(`hello ${user.name}, you have a ${user.role} role`)) // 모든게 성공하면 얼럿창을 노출한다
-  .catch(console.log);
+  .catch(console.log); // 문제가 생기면 콘솔 로그를 출력한다
