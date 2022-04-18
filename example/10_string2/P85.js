@@ -32,7 +32,7 @@ console.log(`모음의 개수는 총 ${result}개`);
 // 정규 표현식 리터럴. 슬래시로 패턴을 감싸서 작성 (예시) const re = /ab+c/
 // 정규 표현식 뒤의 "g"는 전체 문자열을 탐색해서 모든 일치를 반환하도록 지정하는 전역 탐색 플래그
 
-// 두 번째 방법 : .split()으로 문자를 배열화한 후 .filte()을 사용하여 모음을 찾는다
+// 두 번째 방법 : .split()으로 문자를 배열화한 후 .filter()을 사용하여 모음을 찾는다
 const array = name.split('');
 const newArray = array.filter((el) => {
   return el === 'a' || el === 'e' || el === 'i' || el === 'o' || el === 'u';

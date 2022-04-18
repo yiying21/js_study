@@ -3,12 +3,15 @@
 // async ? 체이닝된 여러개의 promise 를 좀 더 간결하게 만들 때 사용
 
 // 1. async 사용해보기
+
+// promise 사용 코드 ↓
 // function fetchUser() {
 //   return new Promise((resolve, reject) => {
 //     resolve('ellie');
 //   });
 // }
 
+// async 사용 코드 ↓
 async function fetchUser() {
   // async를 함수 앞에 쓰면 코드 블록이 자동으로 promise로 바뀐다.
   return 'ellie';

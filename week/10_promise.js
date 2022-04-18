@@ -3,7 +3,7 @@
 // Promise ? (promise는 자바스크립트에 내장된 오브젝트의 일종으로 비동기적으로 콜백 함수 대신 유용하게 쓸 수 있는 오브젝트 )
 // Promise 의 상태 : promise가 만들어져서 수행중일 때 pending 상태 -> 성공적으로 끝내면 fulfilled 상태 or 문제가 있을 때 rejected 상태
 // Producer vs Consumer
-// promise 는 class
+// promise = class
 
 // 1. Producer (Promise 만들기)
 // 새로운 Promise가 만들어질 때에는 우리가 전달한 executor 라는 콜백 함수가 바로 자동 실행됨
@@ -26,7 +26,7 @@ promise //
     console.log(error); // 실패한 값 : 위  reject의 파리미터가 전달됨
   })
   .finally(() => {
-    console.log('finally'); // 성공과 실패 상관없이 어떤 기능을 마지막으로 수행하고 싶을 때 사용
+    console.log('finally'); // 성공과 실패 상관없이 위 기능을 마지막으로 한 번더 수행하고 싶을 때 사용
   });
 
 // 3. Promise chaining (Promise 연결하기)

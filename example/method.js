@@ -178,7 +178,7 @@ const array6 = ['d', 'e', 'f'];
 const array7 = array5.concat(array6);
 console.log(array7); //출력값: Array ["a", "b", "c", "d", "e", "f"]
 
-// .reverse() : 배열의 순서를 거꾸로 배열 // Array.prototype.reverse()
+// .reverse() : 배열의 순서를 거꾸로(역순) 배열 // Array.prototype.reverse()
 const array8 = ['one', 'two', 'three'];
 console.log('array1:', array8); //출력값: "array1:" Array ["one", "two", "three"]
 
