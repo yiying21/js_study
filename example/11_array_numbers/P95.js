@@ -11,13 +11,11 @@ import { question } from 'readline-sync';
 const arrays = [10.11, 11.23, 45.64, 68.45];
 let num = questionInt('2~5 사이의 정수 입력: ');
 
-// 입력한 숫자가 범위에 없는 숫자라면 적절한 에러 메시지를 출력하고 다시 입력 하라고 한다. << 이걸 모르겠..
-
 while (true) {
-  if (arrays.includes(num)) {
+  if (num < 2 || num > 5) {
     console.log('number not in array');
     num = questionInt('다시 숫자 입력: ');
-  } else {
+  } else if (num >= 2 && num <= 5) {
     const initialValue = 0;
     const calculation = arrays.reduce(
       (previousValue, currentValue) => (previousValue + currentValue) / 2,
