@@ -9,5 +9,5 @@ const array = [
   [4, 2, 0],
 ];
 array.map((v) => console.log(v));
-// console.log(array);
+console.log(array);
 // array 라는 배열 안에 3개의 배열이 각각 0, 1, 2, 3번째 위치에 포함되어 있는 구조

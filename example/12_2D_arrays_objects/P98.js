@@ -16,7 +16,31 @@ const array = [
 const row = questionInt('표시할 행 입력: ');
 console.log(array[row]);
 
-const newRow1 = questionInt('새로운 값 입력: ');
-const newRow2 = array[row].join(',');
+const newRow = questionInt('새로운 값 입력: ');
+array[row].push(newRow);
+console.log(array[row]);
 
-console.log(`${newRow2},${newRow1}`);
+// // 2차원 배열 선언 방법
+// function create2DArray(rows, columns) {
+//   let arr = new Array(rows);
+//   for (let i = 0; i < rows; i++) {
+//     arr[i] = new Array(columns);
+//   }
+//   return arr;
+// }
+
+// // arr[5][2]
+// let arr = create2DArray(5, 2);
+// console.log(arr);
+
+// // // 배열 배열을 작성
+// // function Create2DArray(rows) {
+// //   let arr = [];
+
+// //   for (let i = 0; i < rows; i++) {
+// //     arr[i] = [];
+// //   }
+
+// //   return arr;
+// // }
+// // console.log(Create2DArray(2));
