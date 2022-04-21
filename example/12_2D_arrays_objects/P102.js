@@ -19,11 +19,11 @@ console.log(list);
 const name1 = question('입력한 이름중 1개의 이름 입력:');
 console.log(list[name1]);
 
-class List {
-  constructor(name, age, size) {
-    this.name = name;
-    this.age = age;
-    this.size = size;
-  }
-}
-const totalList = [new List(list)];
+// class List {
+//   constructor(name, age, size) {
+//     this.name = name;
+//     this.age = age;
+//     this.size = size;
+//   }
+// }
+// const totalList = [new List(list)];

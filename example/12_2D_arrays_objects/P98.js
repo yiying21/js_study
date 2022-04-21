@@ -13,34 +13,19 @@ const array = [
   [4, 2, 0],
 ];
 
-const row = questionInt('표시할 행 입력: ');
+const row = questionInt('표시할 행을 입력: ');
 console.log(array[row]);
 
 const newRow = questionInt('새로운 값 입력: ');
 array[row].push(newRow);
 console.log(array[row]);
 
-// // 2차원 배열 선언 방법
-// function create2DArray(rows, columns) {
-//   let arr = new Array(rows);
-//   for (let i = 0; i < rows; i++) {
-//     arr[i] = new Array(columns);
-//   }
-//   return arr;
+// 이차원 배열의 행을 2로 지정
+// const row = 5;
+// const column = 5;
+
+// const arr = new Array(row); // [empty x 2]
+// for (let i = 0; i < column; i++) {
+//   arr[i] = new Array(2);
 // }
-
-// // arr[5][2]
-// let arr = create2DArray(5, 2);
-// console.log(arr);
-
-// // // 배열 배열을 작성
-// // function Create2DArray(rows) {
-// //   let arr = [];
-
-// //   for (let i = 0; i < rows; i++) {
-// //     arr[i] = [];
-// //   }
-
-// //   return arr;
-// // }
-// // console.log(Create2DArray(2));
+// console.log(arr); // [[empty x 2], [empty x 2]]

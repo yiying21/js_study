@@ -23,4 +23,5 @@ if (num > -1) {
 }
 console.log(array);
 
-// console.log(array.splice(index,1)); 이게 왜 안되지..
+// .splice() : 배열의 기존 요소를 삭제 또는 교체하거나 새 요소를 추가하여 배열의 내용을 변경 // Array.prototype.splice()
+// 문법 : .splice(시작하는 인덱스 번호, 삭제할 개수 입력), 삭제할 개수 미입력시 시작하는 인덱스 번호부터 모두 삭제됨
