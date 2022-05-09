@@ -16,14 +16,15 @@ while (true) {
     console.log('number not in array');
     num = questionInt('다시 숫자 입력: ');
   } else if (num >= 2 && num <= 5) {
-    arrays.forEach((value) => console.log(arrays.indexOf(value) / num));
+    arrays.forEach((value) => {
+      console.log(Math.floor((value / num) * 100) / 100);
+    });
     break;
   }
-  console.log(arrays);
 }
 
 // .forEach() : 주어진 함수를 배열 요소 각각에 대해 실행함 // Array.prototype.forEach()
-// .reduce() : 배열의 각 요소에 대해 주어진 리듀서(reducer) 함수를 실행하고, 하나의 결과값을 반환
+// .reduce() : 배열의 각 요소에 대해 주어진 리듀서(reducer) 함수를 실행하고, "하나의 결과값"을 반환
 
 // 각 숫자를 입력한 숫자로 나눠서 재배열하는 문제
 // 소숫점 둘째자리 이상 버림 처리할 경우 : Math.floor() 사용, 숫자에 100(10^2)을 곱하고 100을 다시 나눠줌
