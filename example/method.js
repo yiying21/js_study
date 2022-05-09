@@ -204,3 +204,46 @@ console.log(array11.toString()); // 출력값: "1,2,a,1a"
 const stringObj = new String('foo');
 console.log(stringObj); // 출력값: String { "foo" }
 console.log(stringObj.toString()); // 출력값: "foo"
+
+// map() : 배열 내의 모든 요소 각각에 대하여 주어진 함수를 호출한 결과를 모아 새로운 배열을 반환
+const array12 = [1, 4, 9, 16];
+
+// pass a function to map
+const map1 = array12.map((x) => x * 2);
+
+console.log(map1);
+// 출력값: Array [2, 8, 18, 32]
+
+// 숫자의 배열을 받아 각 숫자들의 제곱근이 들어있는 새로운 배열 만들기
+const numbers = [1, 4, 9];
+const roots = numbers.map(Math.sqrt);
+// roots는 [1, 2, 3]
+// numbers는 그대로 [1, 4, 9]
+
+// 인자를 받는 함수를 사용하여 숫자 배열 재구성하기
+// 인자인 배열과 안의 요소들은 map을 통해 순회하면서 원본 배열로 부터 자동으로 할당됨
+const numbers1 = [1, 4, 9];
+const doubles = numbers1.map(function (num) {
+  return num * 2;
+});
+// doubles는 이제 [2, 8, 18]
+// numbers는 그대로 [1, 4, 9]
+
+// map을 활용해 배열 속 객체를 재구성하기
+//  오브젝트의 배열을 받아 각 오브젝트를 다른 형태으로 재구성해 새로운 배열을 만든다
+const kvArray = [
+  { key: 1, value: 10 },
+  { key: 2, value: 20 },
+  { key: 3, value: 30 },
+];
+
+const reformattedArray = kvArray.map(function (obj) {
+  const rObj = {};
+  rObj[obj.key] = obj.value;
+  return rObj;
+});
+// reformattedArray는 [{1:10}, {2:20}, {3:30}]
+// kvArray는 그대로
+// [{key:1, value:10},
+//  {key:2, value:20},
+//  {key:3, value: 30}]
