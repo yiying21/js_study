@@ -9,10 +9,10 @@ const file = 'Names.txt';
 const data = ['AAA', 'BBB', 'CCC', 'DDD', 'EEE'];
 
 // 'Names.txt’라는 이름의 새로운 파일을 생성하여 연다 (비동기 메서드 : open() 사용)
-fs.open(file, 'w', (err, fd) => {
-  if (err) throw err;
-  console.log('Create a new file named "Names.txt"');
-});
+// fs.open(file, 'w', (err, fd) => {
+//   if (err) throw err;
+//   console.log('Create a new file named "Names.txt"');
+// });
 
 // 다섯 명의 이름을 한 줄에 하나씩 문서에 추가한다 (비동기 메서드 : appendFile() 사용)
 data.forEach((value) => {

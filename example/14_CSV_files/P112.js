@@ -26,10 +26,10 @@ fs.appendFile(file, newRecord1, (err) => {
 const csvPath = path.join(file);
 // console.log(csvPath);
 const csv = fs.readFileSync(csvPath, 'utf-8');
-// consoel.log(csv);
+console.log(csv.toString());
 const rows = csv.split('\r\n');
 if (rows[rows.length - 1] === '') {
   console.log("'' has been found");
   rows.pop();
 }
-console.log(rows);
+// console.log(rows);
