@@ -25,4 +25,5 @@ const changeArea = question('변경하려는 매출의 지역 입력: ');
 const changeSales = questionInt('변경하려는 매출액 입력: ');
 sales[changeName][changeArea] = changeSales;
 
+console.log(`조회한 데이터는 ${JSON.stringify(sales[changeName])}`);
 console.log(sales[changeName]);

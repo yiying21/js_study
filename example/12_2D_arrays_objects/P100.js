@@ -14,7 +14,7 @@ const sales = {
   Fiona: { N: 3904, S: 3645, E: 8821, W: 2451 },
 };
 
-console.log(sales1);
+console.log(sales);
 
 // 배열로 했을 때
 // const sales = [

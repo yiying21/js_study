@@ -26,6 +26,8 @@ if (changeCol === 'y') {
   const newCol = questionInt('새로운 값 입력: ');
   array[row][col] = newCol; // 해당 값을 newCol 값으로 대체한다
   console.log(array[row]); // 대체된 값으로 변경 후 행을 출력한다
+  console.log(`최종 입력한 행은 ${array[row]}`);
 } else {
   console.log(array[row]);
+  console.log(`최종 입력한 행은 ${array[row]}`);
 }
